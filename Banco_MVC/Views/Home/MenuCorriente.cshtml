@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "menu_corr";
+}
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Retirar</h5>
+                    <p class="card-text">Recuerde verificar bien sus retiros antes de realizarlos.</p>
+                    <input type="text" name="monto1" id="monto1" />
+                    <div>
+                        <a href="#" class="btn btn-primary mt-3">Retirar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Depositar</h5>
+                    <p class="card-text">No deposites en cuentas de personas que no conoces.</p>
+                    <input type="text" name="monto" id="monto2" />
+                    <div>
+                        <a href="#" class="btn btn-primary mt-3">Depositar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Transferir</h5>
+                    <p class="card-text">No Transfieras en cuentas de personas que no conoces.</p>
+                    <input type="text" name="monto" id="monto2" />
+                    <div>
+                        <a href="#" class="btn btn-primary mt-3">Trasferir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+                    <div>
+                        <a href="#" class="btn btn-primary mt-3">Consultar saldo</a>
+                    </div>
+          
+
+        <div class="d-flex justify-content-center mt-4">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Salir</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Movimientos">Ver movimientos</a>
+
+            
+        </div>
+    </div>
+</div>

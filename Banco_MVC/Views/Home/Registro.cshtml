@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Registro";
+}
+<div class="card text-center">
+    <div class="card-header">
+        <font style="vertical-align: inherit"><font style="vertical-align: inherit"> <h1>Registrarse</h1> </font></font>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">
+            <font style="vertical-align: inherit"><font style="vertical-align: inherit">Nombre</font></font>
+        </h5>
+        <input type="text" name="nombre" id="nombre" />
+        <h5 class="card-title">
+            <font style="vertical-align: inherit"><font style="vertical-align: inherit">cedula</font></font>
+        </h5>
+        <input type="text" name="cedula" id="cedula" />
+        <h5 class="card-title">
+            <font style="vertical-align: inherit"><font style="vertical-align: inherit">Email</font></font>
+        </h5>
+        <input type="text" name="cedula" id="cedula" />
+        <h5 class="card-title">
+            <font style="vertical-align: inherit"><font style="vertical-align: inherit">contraseña</font></font>
+        </h5>
+        <input type="text" name="cedula" id="cedula" /><br />
+
+        <a href="https://getbootstrap-com.translate.goog/docs/5.3/components/card/?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=es-419&amp;_x_tr_pto=sc#"
+           class="btn btn-primary mt-3">
+            <font style="vertical-align: inherit"><font style="vertical-align: inherit">registrar </font></font>
+        </a>
+
+        <button type="button" id="tipoCuentaBtn" class="btn btn-primary dropdown-toggle mt-3" data-bs-toggle="dropdown" aria-expanded="false">
+            Tipo de cuenta
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#" onclick="seleccionarOpcion('Corriente')">Corriente</a></li>
+            <li><a class="dropdown-item" href="#" onclick="seleccionarOpcion('Ahorros')">Ahorros</a></li>
+        </ul>
+        <!-- no se como hacer esto en c# -->
+        <script>
+            function seleccionarOpcion(opcion) {
+                document.getElementById("tipoCuentaBtn").innerText = opcion;
+            }
+        </script>
+    </div>
+</div>
+

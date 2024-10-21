@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+
+<div class="card text-center">
+
+    <div class="card-header">
+        <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+                <h1>Bank</h1>
+            </font>
+        </font>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Usuario</font></font></h5>
+        <input type="text" name="usuario" id="usurio">
+        <h5 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contraseña</font></font></h5>
+        <input type="password" name="contraseña" id="contraseña"> <br>
+        <br />
+
+        <div class="btn btn-primary">
+            <select class="btn btn-primary" id="floatingSelect" aria-label="Floating label select example">
+                <option selected="">Tipo De Cuenta</option>
+                <option value="1">Corriente</option>
+                <option value="2">Ahorros</option>
+
+            </select>
+        </div>
+        <br />
+
+
+        <a class="btn btn-primary"
+            <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="MenuCorriente">Login</a>
+        </a>
+
+          <a class="btn btn-primary"
+            <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Registro">Registrarse</a>
+          </a>
+
+    </div>
+</div>
+
+</div>
